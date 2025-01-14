@@ -29,6 +29,26 @@ The project followed a structured data analysis pipeline:
 
 ---
 
+## Data Dictionary
+
+The **Data Dictionary** provides detailed documentation of the dataset used in this project. It helps users understand the structure, meaning, and data types of each field.
+
+### Contents
+- **Field Descriptions**: Clear explanation of each attribute in the dataset, such as:
+  - `CustomerID`: Unique identifier for each customer.
+  - `InvoiceNo`: Transaction identifier.
+  - `UnitPrice`: Price per unit of product.
+  - `Quantity`: Number of units purchased.
+- **Data Types**: Details of data formats (e.g., Integer, String, Decimal).
+- **Sample Values**: Example entries for clarity.
+- **Critical Fields**: Highlights fields essential for segmentation and analysis.
+- **Privacy Notes**: Sensitive data and anonymization considerations.
+
+The complete data dictionary is available in the `data/` folder:  
+- [data_dictionary.csv](data/data_dictionary.csv)
+
+---
+
 ## Key Insights
 
 ### Segmentation
@@ -48,7 +68,7 @@ The project followed a structured data analysis pipeline:
 ---
 
 ## Repository Structure
-- **`data/`**: Raw and cleaned datasets.
+- **`data/`**: Raw and cleaned datasets, including the data dictionary.
 - **`analysis/`**: Segmentation report and visualizations.
 - **`code/`**: Scripts and notebooks for analysis.
 - **`assets/`**: Conceptual, logical, and physical data models.
