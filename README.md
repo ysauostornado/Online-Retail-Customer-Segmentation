@@ -78,7 +78,6 @@ The complete data dictionary is available in the `data/` folder:
 ## Tools and Technologies
 - **Python**: For RFM analysis and clustering.
 - **OpenRefine**: Data cleaning.
-- **Tableau**: Visualizations.
 - **Google Sheets**: Data management.
 
 ---
