@@ -1,7 +1,5 @@
 # Online Retail Customer Segmentation
 
-This repository contains a detailed case study on customer segmentation for an online retail business, conducted as part of the Digital Transformation Management program at SRH Haarlem University of Applied Sciences.
-
 ## Business Question
 How can customer segmentation improve marketing efficiency and increase customer retention?
 
@@ -77,7 +75,6 @@ The complete data dictionary is available in the `data/` folder:
 
 ## Tools and Technologies
 - **Python**: For RFM analysis and clustering.
-- **OpenRefine**: Data cleaning.
 - **Google Sheets**: Data management.
 
 ---
@@ -86,16 +83,6 @@ The complete data dictionary is available in the `data/` folder:
 - The importance of thorough data cleaning.
 - Using customer segmentation to improve resource allocation.
 - Addressing ethical considerations in data analysis.
-
----
-
-## How to Use
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/Online-Retail-Customer-Segmentation.git
-    ```
-2. Explore the `analysis/` and `visualizations/` folders for insights.
-3. Run the segmentation analysis using the scripts in the `code/` folder.
 
 ---
 
