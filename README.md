@@ -1,86 +1,86 @@
-# Customer Campaign Performance Analysis
+# Online Retail Customer Segmentation
 
-📊 **University Data Analytics Project** analyzing the effectiveness of marketing campaigns using customer demographics, transaction history, and offer engagement data.
+This repository contains a detailed case study on customer segmentation for an online retail business, conducted as part of the Digital Transformation Management program at SRH Haarlem University of Applied Sciences.
 
----
+## Business Question
+How can customer segmentation improve marketing efficiency and increase customer retention?
 
-## 🔍 Project Overview
-This project investigates **which campaign offers drive the highest engagement and revenue** across different customer segments.  
-By combining transaction, demographic, and campaign data, we identify **actionable recommendations** for optimizing marketing campaigns.
-
----
-
-## 📂 Datasets
-- `events.csv` – customer actions (transactions, offers received/viewed/completed)  
-- `offers.csv` – metadata (offer type, duration, reward, difficulty)  
-- `customers.csv` – demographics (age, gender, income, membership date)  
-- `data/final_events_with_customers.csv` – cleaned & merged dataset (272K+ rows, 14,825 valid customers)
+### Problem Statement
+Currently, the e-commerce company employs a one-size-fits-all marketing approach, resulting in suboptimal engagement. This project aims to:
+1. Identify valuable customer segments.
+2. Design targeted marketing strategies.
+3. Improve overall business outcomes.
 
 ---
 
-## 🛠️ Tools & Methods
-- **Python (pandas, matplotlib, seaborn, numpy)** – data cleaning & analysis  
-- **Excel** – quick cleaning & validation  
-- **Tableau** (optional) – visualization  
+## Data Analysis Process
 
-**Data Cleaning**  
-- Removed ~2,000 invalid customers (e.g., unrealistic ages, missing income/gender)  
-- Merged events, offers, and customers datasets into one analysis-ready file  
-
-**Analysis Focus**  
-- Offer completion rates (Discount vs. BOGO, Gender differences)  
-- Customer segmentation by age and income  
-- Engagement trends over campaign timeline  
-
----
-
-## 📈 Key Insights
-
-### 💡 1. Age Group vs Income Group
-The **30–44 age group with €50K–€100K income** completed the most offers, highlighting this segment as the most responsive.  
-
-![Age vs Income](./images/age_income.png)
+The project followed a structured data analysis pipeline:
+1. **Data Cleaning**:
+    - Removed duplicates and erroneous entries.
+    - Merged similar product names for consistency.
+2. **Segmentation Methods**:
+    - **RFM Analysis**: Recency, Frequency, Monetary value scoring.
+    - **K-Means Clustering**: To identify distinct customer groups.
+3. **Visualization**:
+    - Spending habits by customer group.
+    - Seasonal product purchasing trends.
+    - Cluster analysis results.
 
 ---
 
-### 💡 2. Completions over Time
-Engagement peaked during **Days 15–24**, after which completion rates declined sharply.  
+## Key Insights
 
-![Completions Over Time](./images/completions_over_time.png)
+### Segmentation
+- **Champions**: High-value, loyal customers.
+- **Potential Loyalists**: New customers with high engagement.
+- **Risky Customers**: Previously valuable, now disengaged.
 
----
+### Spending Trends
+- Champions have high total spending, while Potential Loyalists exhibit the highest average spending.
 
-### 💡 3. Offer Completion by Gender
-Both genders showed similar engagement levels, with only slight differences in completion trends.  
+### Seasonal Trends
+- Sales peak during holiday seasons (e.g., Christmas, Halloween).
 
-![Offer by Gender](./images/offer_by_gender.png)
-
----
-
-### 💡 4. Offer Completion Rate by Type
-**Discount offers outperformed BOGO offers**, achieving a much higher completion rate.  
-
-![Offer by Type](./images/offer_by_type.png)
+### Promotions
+- Targeted promotions based on customer segment characteristics.
 
 ---
 
-## 🎯 Recommendations
-- Prioritize **discount offers** as the main promotional type  
-- Target **30–44 age group with €50K–€100K income** for maximum ROI  
-- Schedule **mid-campaign reminders** around Days 15–20 to maintain engagement  
-- Continue improving **customer data quality** (gender/income completeness)  
+## Repository Structure
+- **`data/`**: Raw and cleaned datasets.
+- **`analysis/`**: Segmentation report and visualizations.
+- **`code/`**: Scripts and notebooks for analysis.
+- **`assets/`**: Conceptual, logical, and physical data models.
 
 ---
 
-## 📑 Deliverables
-- 📄 [Final Presentation PDF](./presentation/Analytical%20Process%20-%20Arsenii%20Popenko.pdf)  
-- 📊 Jupyter Notebook (coming soon) – `notebooks/campaign_analysis.ipynb`  
-- 📂 Clean dataset – `data/final_events_with_customers.csv`
+## Tools and Technologies
+- **Python**: For RFM analysis and clustering.
+- **OpenRefine**: Data cleaning.
+- **Tableau**: Visualizations.
+- **Google Sheets**: Data management.
 
 ---
 
-## 🚀 Outcome
-This project demonstrates how **customer segmentation + campaign analytics** can drive **data-driven marketing strategies**.  
-It highlights **real-world challenges** like data quality and shows how Python can be combined with business insights to create actionable recommendations.
+## Lessons Learned
+- The importance of thorough data cleaning.
+- Using customer segmentation to improve resource allocation.
+- Addressing ethical considerations in data analysis.
 
 ---
+
+## How to Use
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/Online-Retail-Customer-Segmentation.git
+    ```
+2. Explore the `analysis/` and `visualizations/` folders for insights.
+3. Run the segmentation analysis using the scripts in the `code/` folder.
+
+---
+
+## Contributors
+- **Kaan Tokmak**
+- **Arsenii Popenko**
+- **Zizhao Cheng**
