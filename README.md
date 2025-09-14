@@ -27,6 +27,24 @@ The project followed a structured data analysis pipeline:
 
 ---
 
+## Data Models
+
+To better understand the structure of the dataset, three levels of data modeling were created: conceptual, logical, and physical. These models illustrate how customers, invoices, and products are related.
+
+### Conceptual Data Model
+![Conceptual Data Model](assets/conceptual_model.png)  
+*High-level view of key entities and relationships.*
+
+### Logical Data Model
+![Logical Data Model](assets/logical_data_model.png)  
+*Defines attributes and connections between entities.*
+
+### Physical Data Model
+![Physical Data Model](assets/physical_data_model.png)  
+*Implementation-ready schema with field types and constraints.*
+
+---
+
 ## Visualizations
 
 This project includes detailed visualizations to represent customer segmentation and spending trends. Below are some of the key visual outputs:
